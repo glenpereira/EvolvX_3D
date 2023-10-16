@@ -8,6 +8,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import csea from "./CSEA.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -28,15 +29,40 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import hackathon from "./hackathon.jpg";
+import ctf from "./ctf.jpg";
+import treasurehunt from "./treasurehunt.jpg";
+import triathlon from "./triathlon.jpg";
+import csgo from "./csgo.jpg";
+import fifa from "./fifa.jpg";
+import codequest from "./codequest.jpg"
 
 import controller from "./controller.png";
 import flag from "./flag.png";
 import triathon from "./triathon.png";
-import trail from "./trail.png"
-import hack from "./hack.png"
+import trail from "./trail.png";
+import hack from "./hack.png";
+
+import jlb from "./jlb.svg"
+import digiora from "./Digiora.png";
+import empty from "./empty.png";
+import tiara from "./tiara.png";
+import eatkochieat from "./eatkochieat.png";
+import waytonikah from "./waytonikah.png";
+import mystiko from "./mystiko.jpg"
+
+import alan from "./alan.jpg"
+import anandu from "./anandu.jpg"
+import anson from './anson.jpg'
+import joyal from "./joyal.jpg"
+import juby from "./juby.jpg"
+import klal from "./klal.jpg"
+import riya from "./riya.jpg"
+import sharon from "./sharon.jpg"
+
+import asif from "./asif.jpg"
+import chetan from "./chetan.jpg"
+import glen from "./glen.jpg"
 
 export {
   logo_nbg,
@@ -48,6 +74,7 @@ export {
   github,
   menu,
   close,
+  csea,
   css,
   docker,
   figma,
@@ -65,12 +92,34 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  hackathon,
+  ctf,
+  treasurehunt,
+  triathlon,
+  csgo,
+  fifa,
   controller,
   flag,
   triathon,
   trail,
   hack,
+  jlb,
+  digiora,
+  empty,
+  tiara,
+  eatkochieat,
+  waytonikah,
+  mystiko,
+  alan,
+  anandu,
+  anson,
+  joyal,
+  juby,
+  klal,
+  riya,
+  sharon,
+  asif,
+  chetan,
+  glen,
+  codequest,
 };

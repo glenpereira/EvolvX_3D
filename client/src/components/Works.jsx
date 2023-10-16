@@ -9,8 +9,8 @@ import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+const ServiceCard = ({ index, title, icon, source_code_link }) => (
+  <Tilt className='xs:w-[350px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full orange-yellow-gradient p-[1px] rounded-[20px] shadow-card'
@@ -21,15 +21,16 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-primary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        onClick={() => window.open(source_code_link, "_self")}
+        className='bg-primary rounded-[20px] py-5 px-12 min-h-[320px] flex justify-evenly items-center flex-col cursor-pointer'
       >
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-48 h-48 object-contain'
         />
 
-        <h3 className='text-white text-[24px] font-bold text-center'>
+        <h3 className='text-white text-[30px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -41,8 +42,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Our partners</p>
-        <h2 className={`${styles.sectionHeadText}`}>Sponsors and Collaborators</h2>
+        <p className={`${styles.sectionSubText} `}>Individuals who have provided us with their support</p>
+        <h2 className={`${styles.sectionHeadText}`}>Team and Sponsors</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -50,14 +51,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Join us now for a showcase of unique experience through a series of real-world activities and workshops. 
-          Each program is designed to curate the creative mind and nourish the technical enhancements, and we will provide you with the neccessary links for participation. 
-          You'll see firsthand how we've solved complex problems, worked with different technologies, and managed efficently and effectively. 
-          Don't miss out on this great opportunity to witness us in action.
+          
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap justify-center gap-20'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
